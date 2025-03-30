@@ -21,7 +21,7 @@ const JobDescription = () => {
   useEffect(()=>{
     const fetchSingleJob= async()=>{
         try {
-            const res=await axios.get(`${JOB_API_END_POINT}/get/${jobId}`,{withCredentials:true});
+            const res=await axios.get(`https://jobconnect-zvze.onrender.com/api/v1/job/get/${jobId}`,{withCredentials:true});
             if(res.data.success)
             {
               
@@ -37,7 +37,7 @@ const JobDescription = () => {
    
   const applyJobHandler=async ()=>{
    try {
-     const res=await axios.get(`${APPLICATION_API_END_POINT}/apply/${jobId}`,{withCredentials:true});
+     const res=await axios.get(`https://jobconnect-zvze.onrender.com/api/v1/application/apply/${jobId}`,{withCredentials:true});
      if(res.data.success)
      {               
       setIsApplied(true); 

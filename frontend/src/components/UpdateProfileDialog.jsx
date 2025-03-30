@@ -45,7 +45,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
   }
     try {
      
-      const res=await axios.post(`${USER_API_END_POINT}/profile/update`,formData,{
+      const res=await axios.post(`https://jobconnect-zvze.onrender.com/api/v1/user/profile/update`,formData,{
         headers:{
           'Content-Type':'multipart/form-data'
         },

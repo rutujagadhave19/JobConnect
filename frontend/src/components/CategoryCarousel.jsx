@@ -40,9 +40,6 @@ const CategoryCarousel = () => {
         </CarouselContent>
         <CarouselPrevious/>
         <CarouselNext/>
-
-
-        
       </Carousel>
     </div>
   );
